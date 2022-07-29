@@ -1,0 +1,131 @@
+.App {
+  text-align: center;
+  color: white;
+  background-color: #282c34;
+  background-image: url("https://wallpaperaccess.com/full/359648.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  min-height: 100vh;
+  margin: 0;
+}
+
+.App-logo {
+  height: 30px;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s linear;
+  }
+  /* .delete {
+    animation: Delete-spin infinite 10s linear;
+  } */
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+.buttony {
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-size: 1em;
+  font-weight: bold;
+  margin-left: 15px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+.buttony:hover {
+  background: black;
+  color: white;
+  box-shadow: 0 0 30px 10px white;
+}
+
+.emoji {
+  font-size: 4em;
+  margin: -100px 0 0 0;
+  /* padding-top: 50px; */
+}
+
+.delete:hover {
+  background-color: black;
+  color: white;
+  box-shadow: 0 0 30px 10px white;
+}
+
+.delete {
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  margin-left: 10px;
+}
+
+/* @keyframes Delete-spin {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+} */
+
+.todo-list {
+  margin: 0 auto;
+  width: 50%;
+  max-width: 300px;
+}
+
+.li-item {
+  margin: 0 auto;
+  display: block;
+  text-shadow: 0 0 30px #282c34;
+}
+
+.li-item:before {
+  content: "•     ";
+  font-size: 120%;
+}
+
+.list-input {
+  font-size: 1em;
+  margin-left: 10px;
+  padding: 5px 0 5px 20px;
+  max-width: 250px;
+  font-family: "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  border-radius: 20px;
+  border: 2px solid black;
+}
+
+h1 {
+  text-shadow: 0 0 30px #282c34;
+}
+
+.addDestination {
+  text-shadow: 0 0 30px #282c34;
+}
